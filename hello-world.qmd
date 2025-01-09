@@ -1,0 +1,213 @@
+---
+title: "Can the wisdom of crowds guess celebrity ages?"
+subtitle: "STA 199"
+date: 01/09/2025
+author: Insert Your Name
+format: pdf
+---
+
+# Setup
+
+## Load packages
+
+```{r}
+#| message: false
+
+```
+
+## Load in the data
+
+```{r}
+#| message: false
+
+```
+
+{{< pagebreak >}}
+
+# Celebrity 1
+
+## Compute numerical summaries
+
+```{r}
+
+```
+
+## Plot the data
+
+```{r}
+#| message: false
+
+
+```
+
+-   **Born**: 2/10/1987
+-   **Age in photo**:
+-   **Claim to fame**:
+
+{{< pagebreak >}}
+
+# Celebrity 2
+
+## Compute numerical summaries
+
+```{r}
+#| eval: false
+typical_guess2 <- age_guesses |>
+  summarize(mean_guess = mean(celeb2), 
+            median_guess = median(celeb2))
+typical_guess2
+```
+
+## Plot the data
+
+```{r}
+#| message: false
+#| eval: false
+
+ggplot(age_guesses, aes(x = celeb2)) + 
+  geom_histogram() + 
+  geom_rect(aes(xmin = 38, xmax = 42, ymin = 0, ymax = Inf), fill = "darkgreen") + 
+  labs(x = "Age", title = "Age guesses for XYZ") + 
+  geom_vline(data = typical_guess2, aes(xintercept = mean_guess), color = "red") + 
+  geom_vline(data = typical_guess2, aes(xintercept = median_guess), color = "blue")
+```
+
+-   **Born**:
+-   **Died**: 5/10/1977
+-   **Age in photo**:
+-   **Claim to fame**:
+
+{{< pagebreak >}}
+
+# Celebrity 3
+
+## Compute numerical summaries
+
+```{r}
+#| eval: false
+
+typical_guess3 <- age_guesses |>
+  summarize(mean_guess = mean(celeb3), 
+            median_guess = median(celeb3))
+typical_guess3
+```
+
+## Plot the data
+
+```{r}
+#| message: false
+#| eval: false
+
+ggplot(age_guesses, aes(x = celeb3)) + 
+  geom_histogram() + 
+  labs(x = "Age", title = "Age guesses for XYZ") + 
+  geom_vline(data = typical_guess3, aes(xintercept = mean_guess), color = "red") + 
+  geom_vline(data = typical_guess3, aes(xintercept = median_guess), color = "blue") +
+  geom_vline(xintercept = 0, color = "darkgreen")
+```
+
+-   **Born**: 2/7/1887 
+-   **Died**: 2/12/1983
+-   **Age in photo**:
+-   **Claim to fame**:
+
+{{< pagebreak >}}
+
+# Celebrity 4
+
+## Compute numerical summaries
+
+```{r}
+#| eval: false
+
+typical_guess4 <- age_guesses |>
+  summarize(mean_guess = mean(celeb4), 
+            median_guess = median(celeb4))
+typical_guess4
+```
+
+## Plot the data
+
+```{r}
+#| message: false
+#| eval: false
+
+ggplot(age_guesses, aes(x = celeb4)) + 
+  geom_histogram() + 
+  labs(x = "Age", title = "Age guesses for XYZ") + 
+  geom_vline(data = typical_guess4, aes(xintercept = mean_guess), color = "red") + 
+  geom_vline(data = typical_guess4, aes(xintercept = median_guess), color = "blue") +
+  geom_vline(xintercept = 0, color = "darkgreen")
+```
+
+-   **Born**: 2/3/1963
+-   **Age in photo**:
+-   **Claim to fame**:
+
+{{< pagebreak >}}
+
+# Celebrity 5
+
+## Compute numerical summaries
+
+```{r}
+#| eval: false
+
+typical_guess5 <- age_guesses |>
+  summarize(mean_guess = mean(celeb5), 
+            median_guess = median(celeb5))
+typical_guess5
+```
+
+## Plot the data
+
+```{r}
+#| message: false
+#| eval: false
+
+ggplot(age_guesses, aes(x = celeb5)) + 
+  geom_histogram() + 
+  labs(x = "Age", title = "Age guesses for XYZ") + 
+  geom_vline(data = typical_guess5, aes(xintercept = mean_guess), color = "red") + 
+  geom_vline(data = typical_guess5, aes(xintercept = median_guess), color = "blue") +
+  geom_vline(xintercept = 0, color = "darkgreen")
+```
+
+-   **Born**: 9/18/1961
+-   **Died**: 6/19/2013
+-   **Age in photo**:
+-   **Claim to fame**:
+
+{{< pagebreak >}}
+
+# Celebrity 6
+
+## Compute numerical summaries
+
+```{r}
+#| eval: false
+
+typical_guess6 <- age_guesses |>
+  summarize(mean_guess = mean(celeb6), 
+            median_guess = median(celeb6))
+typical_guess6
+```
+
+## Plot the data
+
+```{r}
+#| message: false
+#| eval: false
+
+ggplot(age_guesses, aes(x = celeb6)) + 
+  geom_histogram() + 
+  labs(x = "Age", title = "Age guesses for XYZ") + 
+  geom_vline(data = typical_guess6, aes(xintercept = mean_guess), color = "red") + 
+  geom_vline(data = typical_guess6, aes(xintercept = median_guess), color = "blue") +
+  geom_vline(xintercept = 0, color = "darkgreen")
+```
+
+-   **Born**: 10/21/1925
+-   **Died**: 7/16/2003
+-   **Age in photo**:
+-   **Claim to fame**:
